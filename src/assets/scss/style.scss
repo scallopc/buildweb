@@ -1,0 +1,35 @@
+:root {
+  font-family: "Montserrat", system-ui;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: $prussian-blue;
+  color: $ghost-white;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1 {
+margin: 0;
+}
+
+a {
+text-decoration: none;
+}
+
+.m-deafult {
+  margin: 40px ;
+}
