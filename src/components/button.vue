@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue';
 
 const props = defineProps({
   name: {
@@ -14,18 +14,18 @@ const props = defineProps({
   },
   type: {
     type: String,
-    default: "default",
-    validator: (value) => ["default", "outline"].includes(value),
+    default: 'default',
+    validator: (value) => ['default', 'outline'].includes(value),
   },
 });
 
 const buttonClass = computed(() => {
-  return props.type === "outline" ? "outline" : "default";
+  return props.type === 'outline' ? 'outline' : 'default';
 });
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/variables.scss";
+@import '../assets/scss/variables.scss';
 
 .button {
   padding: 10px 20px;
@@ -33,7 +33,7 @@ const buttonClass = computed(() => {
   cursor: pointer;
   letter-spacing: 2px;
   text-transform: uppercase;
-  
+  border: none;
 }
 
 .default {
