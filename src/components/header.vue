@@ -1,5 +1,5 @@
 <template>
-    <header class="m-deafult">
+    <header class="m-default">
         <div>
 <img src="../assets//images/logo/buildweblogo.png" alt="build web logo">
         </div>
