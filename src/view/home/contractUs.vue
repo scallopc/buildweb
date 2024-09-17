@@ -1,5 +1,5 @@
 <template>
-  <div class="contract-us-container">
+  <div class="contract-us-container m-default focus-in-expand">
     <h1>Contrate-nos para</h1>
     <div class="contract-us-product">
       <div class="contract-us-item">
@@ -33,8 +33,8 @@
 @import '../../assets/scss/variables.scss';
 
 .contract-us-container {
-  margin: 90px 40px;
-
+  padding-top: 60px;
+  
   h1 {
     color: $yellow-web;
   }
@@ -43,15 +43,20 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap: 80px;
     text-align: left;
-    padding: 20px 0 0 0;
+    padding: 20px 0;
+    gap: 20px;
   }
 
   .contract-us-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background: $middle-night;
-    padding: 30px 20px;
-    border-radius: 4%;
+    padding: 20px;
+    border-radius: 4px;
+    width: 360px;
+    max-width: 100%;
   }
 }
 </style>

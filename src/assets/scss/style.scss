@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 :root {
   font-family: "Montserrat", system-ui;
   color-scheme: light dark;
@@ -22,7 +24,7 @@ html {
   font-size: 14px;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -30,6 +32,6 @@ a {
   text-decoration: none;
 }
 
-.m-deafult {
-  margin: 40px;
+.m-default {
+  margin: 40px ;
 }
