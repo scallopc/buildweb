@@ -43,8 +43,8 @@ const buttonClass = computed(() => {
 }
 
 .outline {
-  border: 1px solid $night;
-  background-color: transparent;
-  color: $night;
+  border: 1px solid $ghost-white;
+  background-color: $prussian-blue;
+  color: $ghost-white;
 }
 </style>

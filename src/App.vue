@@ -9,7 +9,7 @@
 <script setup>
 import Header from './components/header.vue';
 import Footer from './components/footer.vue';
-import Home from './view/home.vue';
+import Home from './view/home/home.vue';
 </script>
 
 <style lang="scss">

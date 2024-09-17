@@ -4,32 +4,13 @@
       <img src="../assets//images/logo/buildweblogo.png" alt="build web logo" />
     </div>
     <div>
-      <Menu :item="menuItem" />
+      <Menu />
     </div>
   </header>
 </template>
 
 <script setup>
 import Menu from './menu.vue';
-
-const menuItem = [
-  {
-    label: 'Home',
-    route: '/',
-  },
-  {
-    label: 'Sobre nós',
-    route: '/about',
-  },
-  {
-    label: 'Serviços',
-    route: '/service',
-  },
-  {
-    label: 'Contato',
-    route: '/contact',
-  },
-];
 </script>
 
 <style scoped>
