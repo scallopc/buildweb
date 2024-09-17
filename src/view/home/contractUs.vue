@@ -46,6 +46,7 @@
     text-align: left;
     padding: 20px 0;
     gap: 20px;
+    flex-wrap: wrap;
   }
 
   .contract-us-item {
