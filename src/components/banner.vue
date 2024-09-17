@@ -11,20 +11,19 @@
     </div>
     <div style="width: 180px;"></div>
       <img class="circle-1" src="../assets/images/elements/circle-1.png" alt="circle-1" />
-      <!-- <img class="arrow-1" src="../assets/images/elements/arrow-1.png" alt="arrow-1" /> -->
        
-    <div class="bg-relative">
-      <img class="circle-big" src="../assets/images/elements/circle-big.png" alt="circle-big" />
-      <img class="degraus" src="../assets/images/elements/degraus.png" alt="degraus" />
-      <img class="circle-out" src="../assets/images/elements/circle-out.png" alt="circle-out" />
-      <img class="rect" src="../assets/images/elements/rect.png" alt="rect" />
-      <img class="circle-shape" src="../assets/images/elements/circle-shape.png" alt="circle-shape" />
-      <img class="wave" src="../assets/images/elements/wave.png" alt="wave" />
-      <img class="arrow-2" src="../assets/images/elements/arrow-2.png" alt="arrow-2" />
-      <img class="arrows-right" src="../assets/images/elements/arrows-right.png" alt="arrows-right" />
-      <img class="circle-2" src="../assets/images/elements/circle-2.png" alt="circle-2" />
-      <img class="circle-3" src="../assets/images/elements/circle-3.png" alt="circle-3" />
-      <img class="circle-big-out" src="../assets/images/elements/circle-big-out.png" alt="circle-big-out" />
+    <div class="bg-relative slide-in-right">
+      <img class="circle-big slide-in-right" src="../assets/images/elements/circle-big.png" alt="circle-big" />
+      <img class="degraus slide-in-right" src="../assets/images/elements/degraus.png" alt="degraus" />
+      <img class="circle-out slide-in-right" src="../assets/images/elements/circle-out.png" alt="circle-out" />
+      <img class="rect slide-in-right" src="../assets/images/elements/rect.png" alt="rect" />
+      <img class="circle-shape slide-in-right" src="../assets/images/elements/circle-shape.png" alt="circle-shape" />
+      <img class="wave slide-in-right" src="../assets/images/elements/wave.png" alt="wave" />
+      <img class="arrow-2 slide-in-right" src="../assets/images/elements/arrow-2.png" alt="arrow-2" />
+      <img class="arrows-right slide-in-right" src="../assets/images/elements/arrows-right.png" alt="arrows-right" />
+      <img class="circle-2 slide-in-right" src="../assets/images/elements/circle-2.png" alt="circle-2" />
+      <img class="circle-3 slide-in-right" src="../assets/images/elements/circle-3.png" alt="circle-3" />
+      <img class="circle-big-out slide-in-right" src="../assets/images/elements/circle-big-out.png" alt="circle-big-out" />
       
       <div class="bg-image slide-in-right">
         <img :src="resolveImage(imageSrc)" alt="Imagem de background" style="width: 100%;"/>
