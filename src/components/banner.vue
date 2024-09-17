@@ -7,11 +7,11 @@
       <span class="bg-subtitle-home">
         {{ subtitle }}
       </span>
-      <Button v-if="showButton" :name="buttonText" />
+      <Button v-if="showButton" :name="buttonText" @click="handleButtonClick"/>
     </div>
     <div style="width: 180px;"></div>
       <img class="circle-1" src="../assets/images/elements/circle-1.png" alt="circle-1" />
-      <img class="arrow-1" src="../assets/images/elements/arrow-1.png" alt="arrow-1" />
+      <!-- <img class="arrow-1" src="../assets/images/elements/arrow-1.png" alt="arrow-1" /> -->
        
     <div class="bg-relative">
       <img class="circle-big" src="../assets/images/elements/circle-big.png" alt="circle-big" />
@@ -64,10 +64,18 @@ const props = defineProps({
   }
 });
 
-function resolveImage(imagePath) {
+const resolveImage =  (imagePath) => {
   // Usa require para garantir que o Webpack/Vue resolva o caminho
   return new URL(imagePath, import.meta.url).href;
 }
+
+const handleButtonClick = () => {
+  const phoneNumber = '5511949536115';
+  const message = 'Olá! Estou interessado em saber mais sobre seus serviços.'; 
+  
+  // Redirecionar para o WhatsApp
+  const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');};
 
 </script>
 

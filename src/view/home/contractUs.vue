@@ -43,15 +43,20 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap: 80px;
     text-align: left;
-    padding: 20px 0 0 0;
+    padding: 20px 0;
+    gap: 20px;
   }
 
   .contract-us-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background: $middle-night;
-    padding: 30px 20px;
-    border-radius: 4%;
+    padding: 20px;
+    border-radius: 4px;
+    width: 360px;
+    max-width: 100%;
   }
 }
 </style>

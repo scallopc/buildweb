@@ -1,11 +1,11 @@
 <template>
-  <button :class="['button', buttonClass]">
+  <button :class="['button', buttonClass]" @click="handleClick">
     {{ name }}
   </button>
 </template>
 
 <script setup>
-import { computed } from 'vue';
+import { computed,  defineEmits, defineProps } from 'vue';
 
 const props = defineProps({
   name: {
@@ -19,9 +19,16 @@ const props = defineProps({
   },
 });
 
+const emit = defineEmits(['click']);
+
 const buttonClass = computed(() => {
   return props.type === 'outline' ? 'outline' : 'default';
 });
+
+const handleClick = () => {
+  emit('click');
+};
+
 </script>
 
 <style lang="scss" scoped>
