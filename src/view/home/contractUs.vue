@@ -1,5 +1,5 @@
 <template>
-  <div class="contract-us-container">
+  <div class="contract-us-container m-default focus-in-expand">
     <h1>Contrate-nos para</h1>
     <div class="contract-us-product">
       <div class="contract-us-item">
@@ -33,8 +33,8 @@
 @import '../../assets/scss/variables.scss';
 
 .contract-us-container {
-  margin: 90px 40px;
-
+  padding-top: 60px;
+  
   h1 {
     color: $yellow-web;
   }

@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="m-default focus-in-expand">
     <div class="subscription-container">
       <h1>Tenho interesse</h1>
       <div class="subscription-form">
@@ -19,12 +19,18 @@
 </template>
 
 <script setup>
-import Button from './button.vue';
-import Menu from './menu.vue';
+import Button from "./button.vue";
+import Menu from "./menu.vue";
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/variables.scss';
+@import "../assets/scss/variables.scss";
+
+footer{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
 p {
   text-align: center;
@@ -32,13 +38,14 @@ p {
 
 .subscription-container {
   display: flex;
-  gap: 29px;
+  gap: 30px;
   text-align: center;
   align-items: center;
   justify-content: center;
 
   .subscription-form {
     background: $ghost-white;
+    border-radius: 4px;
 
     input {
       width: 200px;
@@ -49,17 +56,19 @@ p {
     }
   }
 }
+
 .menu-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   z-index: 1;
   position: relative;
-  margin: 100px 100px 70px 0;
   gap: 34px;
+
   .social-container {
     display: flex;
     gap: 20px;
+
     img {
       width: 28px;
     }
