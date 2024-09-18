@@ -1,24 +1,24 @@
 <template>
   <div class="contract-us-container m-default focus-in-expand">
-    <h1>Contrate-nos para</h1>
+    <h2 class="title-yellow title">Contrate-nos para</h2>
     <div class="contract-us-product">
       <div class="contract-us-item">
-        <h3>Design</h3>
-        <span>
+        <h3 class="subtitle-bold">Design</h3>
+        <span class="text-lg">
           A nossa equipe de web design tem muitos anos de experiência nas
           principais áreas de design para construir o site de que necessita.
         </span>
       </div>
       <div class="contract-us-item">
-        <h3>Desenvolvimento</h3>
-        <span>
+        <h3 class="subtitle-bold">Desenvolvimento</h3>
+        <span class="text-lg">
           Procurando soluções personalizadas para seus sites? Nossa equipe
           desenvolverá e entregará um site que atenderá.
         </span>
       </div>
       <div class="contract-us-item">
-        <h3>Marketing</h3>
-        <span>
+        <h3 class="subtitle-bold">Marketing</h3>
+        <span class="text-lg">
           Com o marketing digital pesquisado, garantiremos que novos clientes e
           consumidores possam encontrar sua empresa.
         </span>
@@ -30,14 +30,10 @@
 <script setup></script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/variables.scss';
+@import "../../assets/scss/variables.scss";
 
 .contract-us-container {
   padding-top: 60px;
-  
-  h1 {
-    color: $yellow-web;
-  }
 
   .contract-us-product {
     display: flex;
@@ -46,7 +42,6 @@
     text-align: left;
     padding: 20px 0;
     gap: 20px;
-    flex-wrap: wrap;
   }
 
   .contract-us-item {
@@ -56,8 +51,20 @@
     background: $middle-night;
     padding: 20px;
     border-radius: 4px;
-    width: 360px;
-    max-width: 100%;
+    max-width: 365px;
+    width: 100%;
+    height: 266px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contract-us-container {
+    text-align: center;
+
+    .contract-us-product {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }
 </style>

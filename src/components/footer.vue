@@ -1,6 +1,6 @@
 <template>
   <footer class="m-default focus-in-expand">
-    <div class="subscription-container">
+    <!-- <div class="subscription-container">
       <h1>Tenho interesse</h1>
       <div class="subscription-form">
         <input type="email" v-model="email" 
@@ -8,7 +8,7 @@
           @keydown.enter="submitEmail"  />
         <Button name="Tenho interesse" type="outline" @click="submitEmail"/>
       </div>
-    </div>
+    </div> -->
     <div class="menu-container">
       <Menu />
       <div class="social-container">

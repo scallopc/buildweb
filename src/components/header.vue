@@ -6,11 +6,15 @@
     <div>
       <Menu />
     </div>
+    <div>
+      <WhatsappButton :buttonText="'Fale conosco'"/>
+    </div>
   </header>
 </template>
 
 <script setup>
 import Menu from './menu.vue';
+import WhatsappButton from './whatsappButton.vue';
 </script>
 
 <style scoped>
@@ -20,4 +24,13 @@ header {
   gap: 20px;
   align-items: center;
 }
+
+
+/* Media Queries para Responsividade*/
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
 </style>

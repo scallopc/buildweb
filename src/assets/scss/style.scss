@@ -21,17 +21,102 @@ body {
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6, p{
   margin: 0;
 }
 
+.title-lg {
+  font-size: 62px;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.subtitle-bold {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.subtitle-semibold {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.subtitle-regular {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.text-lg {
+  font-size: 20px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 25px;
+}
+
 a {
   text-decoration: none;
 }
 
+//margin
 .m-default {
   margin: 40px ;
+}
+
+.m-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.w-max {
+  max-width: 1440px;
+}
+
+//colors
+.title-yellow {
+  color: $yellow-web;
+}
+
+.bg-image {
+  flex: 1;
+  max-width: 600px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+
+.text-container {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Media Queries para Responsividade*/
+//images
+@media (max-width: 768px) {
+
+  .none {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 576px) {
+ 
 }
