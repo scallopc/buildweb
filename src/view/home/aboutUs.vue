@@ -1,32 +1,26 @@
 <template>
   <div class="about-us-container m-default focus-in-expand">
     <div class="about-us-product">
+      <h1>Sobre nós</h1>
+      <p>
+        Somos uma equipe com mais de 8 anos de experiência em criação de sites e
+        marketing para ajudar as empresas a crescer on-line.
+      </p>
       <div class="about-us-item">
-        <div class="about-us-subscription">
-          <h1>Sobre nós</h1>
-          <p>
-            Somos uma equipe com mais de 8 anos de experiência em criação de
-            sites e marketing para ajudar as empresas a crescer on-line.
-          </p>
-        </div>
+        <h3>Missão</h3>
+        <span>
+          Nossa missão é capacitar nossos clientes a usar a Internet em todo o
+          seu potencial, fornecendo soluções de marketing e design
+          personalizadas, econômicas e eficazes.
+        </span>
       </div>
-      <div class="vision-mission">
-        <div class="about-us-item">
-          <h2>Missão</h2>
-          <span>
-            Nossa missão é capacitar nossos clientes a usar a Internet em todo o
-            seu potencial, fornecendo soluções de marketing e design
-            personalizadas, econômicas e eficazes.
-          </span>
-        </div>
-        <div class="about-us-item">
-          <h2>Visão</h2>
-          <span>
-            Nossa visão é nos tornarmos um líder global no fornecimento dos
-            melhores e mais exclusivos serviços de web design e marketing para
-            aumentar a produtividade e a força dos negócios de nossos clientes.
-          </span>
-        </div>
+      <div class="about-us-item">
+        <h3>Visão</h3>
+        <span>
+          Nossa visão é nos tornarmos um líder global no fornecimento dos
+          melhores e mais exclusivos serviços de web design e marketing para
+          aumentar a produtividade e a força dos negócios de nossos clientes.
+        </span>
       </div>
     </div>
     <div class="about-us-img">
@@ -42,27 +36,30 @@
 
 .about-us-container {
   display: flex;
-  padding-top: 60px;
+  gap: 20px;
 
   h1,
-  h2 {
+  h3 {
     color: $yellow-web;
   }
 
   .about-us-product {
-    text-align: left;
-    padding: 0 100px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+
     .about-us-item {
-      padding: 20px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
   }
 
-  .about-us-subscription {
-    padding-bottom: 20px;
-  }
-
   .about-us-img {
-    width: 400px;
+    img {
+      max-width: 400px;
+    }
   }
 }
 </style>
