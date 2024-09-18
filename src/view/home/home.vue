@@ -6,11 +6,13 @@
     imageSrc="../assets/images/home.png"
   />
   <ContractUs />
+  <AboutUs />
 </template>
 
 <script setup>
 import Banner from '../../components/banner.vue';
 import ContractUs from './contractUs.vue';
+import AboutUs from './aboutUs.vue';
 </script>
 
 <style lang="scss" scoped></style>
