@@ -1,17 +1,19 @@
 <template>
   <main class="main-container focus-in-expand">
     <Header />
-    <RouterView />
+    <div class="m-auto w-max">
+      <RouterView />
+    </div>
     <Footer />
   </main>
 </template>
 
 <script setup>
-import Header from './components/header.vue';
-import Footer from './components/footer.vue';
+import Header from "./components/header.vue";
+import Footer from "./components/footer.vue";
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .main-container {
   display: flex;
   flex-direction: column;

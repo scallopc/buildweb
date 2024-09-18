@@ -14,25 +14,25 @@
 </template>
 
 <script setup>
-import { ref, defineProps } from 'vue';
-import { useRoute } from 'vue-router';
+import { ref, defineProps } from "vue";
+import { useRoute } from "vue-router";
 
 const menuItem = [
   {
-    label: 'Home',
-    route: '/',
+    label: "Home",
+    route: "/",
   },
   {
-    label: 'Sobre nós',
-    route: '/about',
+    label: "Sobre nós",
+    route: "/about",
   },
   {
-    label: 'Serviços',
-    route: '/service',
+    label: "Serviços",
+    route: "/service",
   },
   {
-    label: 'Contato',
-    route: '/contact',
+    label: "Contato",
+    route: "/contact",
   },
 ];
 const props = defineProps({
@@ -50,7 +50,7 @@ const isActiveRoute = (routePath) => {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/variables.scss';
+@import "../assets/scss/variables.scss";
 
 .menu {
   display: flex;
@@ -64,4 +64,5 @@ const isActiveRoute = (routePath) => {
     color: $yellow-web;
   }
 }
+
 </style>
