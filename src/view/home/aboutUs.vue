@@ -52,19 +52,15 @@
   .about-us-product {
     text-align: left;
     padding: 0 100px 0 0;
+    .about-us-item {
+      padding: 20px 0 0 0;
+    }
   }
 
   .about-us-subscription {
     padding-bottom: 20px;
   }
 
-  .about-us-item {
-    padding: 20px;
-  }
-
-  .vision-mission {
-    /* font-size: 10px; */
-  }
   .about-us-img {
     width: 400px;
   }
