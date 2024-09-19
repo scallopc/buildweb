@@ -27,18 +27,20 @@
       />
     </div>
   </div>
-  <ContractUs />
-  <AboutUs />
+
+  <div class="m-default"><ContractUs /></div>
+  <div class="m-default"><AboutUs /></div>
+  <div class="m-default"><Customers /></div>
 </template>
 
 <script setup>
-import ContractUs from "./contractUs.vue";
-import AboutUs from "./aboutUs.vue";
-import WhatsappButton from "../../components/whatsappButton.vue";
+import ContractUs from './contractUs.vue';
+import AboutUs from './aboutUs.vue';
+import WhatsappButton from '../../components/whatsappButton.vue';
+import Customers from './customers.vue';
 </script>
 
 <style lang="scss" scoped>
-
 .particle {
   position: absolute;
   width: 5px;

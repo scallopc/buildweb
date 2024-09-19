@@ -1,5 +1,5 @@
 <template>
-  <div class="contract-us-container m-default focus-in-expand">
+  <div class="contract-us-container focus-in-expand">
     <h2 class="title-yellow title">Contrate-nos para</h2>
     <div class="contract-us-product">
       <div class="contract-us-item">
@@ -30,7 +30,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
-@import "../../assets/scss/variables.scss";
+@import '../../assets/scss/variables.scss';
 
 .contract-us-container {
   padding-top: 60px;
